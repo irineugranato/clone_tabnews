@@ -4,6 +4,6 @@ services:
    env_file:
     - ../.env
    environment:
-    POSTGRES_PASSWORD: "admin"
+    POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD
    ports:
     - "5432:5432"
